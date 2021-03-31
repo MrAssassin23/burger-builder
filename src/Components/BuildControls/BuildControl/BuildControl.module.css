@@ -55,7 +55,7 @@
       border: 1px solid #7E7365;
       color : #ccc;
       background-color: #AC9980;
-      cursor: default;
+      cursor: not-allowed;
 }
 
 @media screen and (max-width : 800px){

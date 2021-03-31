@@ -20,6 +20,11 @@ const BuildControls = (props) => {
                         )
                   }) }    
                   <p className={classes.Total}> Total :  <strong> {props.total.toFixed(2)} $ </strong> </p>  
+                  <button 
+                        className={classes.OrderButton} 
+                        disabled={!props.purchasable} 
+                        onClick={props.purchasing}
+                  >Order Now</button>
             </div>
       )
 }

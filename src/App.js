@@ -2,6 +2,7 @@ import React from 'react'
 import SideDrawer from "./Components/Navigation/SideDrawer/SideDrawer";
 import Toolbar from "./Components/Navigation/Toolbar/Toolbar";
 import BurgerBuilder from "./Containers/BurgerBuilder/BurgerBuilder";
+import {BrowserRouter as Router} from 'react-router-dom'
 
 class App extends React.Component {
   state = {
@@ -21,11 +22,11 @@ class App extends React.Component {
 
   render() {
     return (
-      <div>
+      <Router>
         <SideDrawer open={this.state.showSideDrawer} close={this.sideDrawerCloseHandler} />
         <Toolbar togglerClicked={this.sideDrawerTogglerHandler} />
         <BurgerBuilder />
-      </div>
+      </Router>
     );
   }
 }

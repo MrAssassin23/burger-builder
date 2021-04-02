@@ -79,6 +79,7 @@ class BurgerBuilder extends Component {
       }
 
       continueHandler = () => {
+            this.cancelPurchasing()
             this.props.history.push('/Checkout')
             // console.log(this.props)
       }
